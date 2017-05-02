@@ -48,10 +48,10 @@ public class testing {
     }
 
     public JSONObject loadData(String file_Name) throws Exception {
-        File dataFolder = new File("resources");
+        File dataFolder = new File("src");
         filePath = dataFolder.getAbsolutePath();
         JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader(filePath+"/account_data/" + file_Name + ".json"));
+        Object obj = parser.parse(new FileReader(filePath+"/resources/account_data/" + file_Name + ".json"));
         JSONObject js = (JSONObject) obj;
         fileName = js;
         return fileName;
