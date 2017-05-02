@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features={"specs/"},glue ={"step_def"})
+@CucumberOptions(features={"src/test/specs/"},glue ={"step_def"})
 public class AcceptanceTests {
 
 }
