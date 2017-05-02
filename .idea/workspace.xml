@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40eb0d4c-56f6-4235-8304-5f274738865d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/account_data/00005000.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/account_data/01078913.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/account_data/01078916.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step_def/testing.class" afterPath="$PROJECT_DIR$/target/test-classes/step_def/testing.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -709,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493733542986</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second Commit">
+      <created>1493734608238</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493734608238</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
