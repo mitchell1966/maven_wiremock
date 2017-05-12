@@ -23,8 +23,6 @@ public class testing {
     String filePath = "";
     JSONObject fileName;
     WireMockServer wireMockRun;
-    String balanceCheckUrlRegex = "/pttg/financialstatus/v1/accounts/\\d{6}/\\d{8}/dailybalancestatus*";
-    String consentCheckUrkRegex = "/pttg/financialstatus/v1.*";
     WireMockServer wm = new WireMockServer(8082);
     Logger LOGGER = LoggerFactory.getLogger(testing.class);
 
