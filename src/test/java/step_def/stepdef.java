@@ -20,37 +20,15 @@ public class stepdef {
     public Response respCalc;
     public Response consent;
     String jsonAsString;
-    String dependants = "";
-    String applicantType = "";
     String fromDate = "";
     String toDate = "";
     String accountNumber = "";
     String sortCode = "";
     String minimum = "";
-    String days = "";
-    String inLondon = "";
-    String courseLength = "";
-    String tuitionFees = "";
-    String tuitionFeesPaid = "";
-    String accommodationFeesPaid = "";
-    String studentType = "";
     String dob = "";
-    String courseStartDate = "";
-    String courseEndDate = "";
-    String continuationEndDate = "";
-    String numberOfDependants = "";
-    String courseType = "";
-    String courseInstitution = "";
-    String originalCourseStartDate = "";
-    String dependanstOnly = "";
-    String recognisedBodyOrHEI = "";
     String balanceCheckUrlRegex = "/financialstatus/v1.*";
     String consentCheckUrkRegex = "/financialstatus/v1.*";
 
-//@Before
-//        public void init(){
-//    ts.setup();
-//}
 
 
     testing ts = new testing();
@@ -61,16 +39,7 @@ public class stepdef {
 
         for (String s : tableKey) {
 
-            if (s.equalsIgnoreCase("dependants")) {
-                dependants = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("applicant type")) {
-                applicantType = entries.get(s);
-            }
 
-            if (s.equalsIgnoreCase("Student Type")) {
-                studentType = entries.get(s);
-            }
             if (s.equalsIgnoreCase("Account Number")) {
                 accountNumber = entries.get(s);
             }
@@ -86,62 +55,11 @@ public class stepdef {
             if (s.equalsIgnoreCase("To Date")) {
                 toDate = entries.get(s);
             }
-            if (s.equalsIgnoreCase("Course start date")) {
-                courseStartDate = entries.get(s);
 
-            }
-            if (s.equalsIgnoreCase("Course end date")) {
-                courseEndDate = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("Continuation end date")) {
-                continuationEndDate = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("Total tuition fees")) {
-                tuitionFees = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("In London") && entries.get(s).equalsIgnoreCase("Yes")) {
-                inLondon = "true";
-            } else if (s.equalsIgnoreCase("In London") && entries.get(s).equalsIgnoreCase("No")) {
-                inLondon = "false";
-            } else if (s.equalsIgnoreCase("In London")) {
-                inLondon = "";
-            }
-
-            if (s.equalsIgnoreCase("Tuition fees already paid")) {
-                tuitionFeesPaid = entries.get(s);
-            }
-
-            if (s.equalsIgnoreCase("Accommodation fees already paid")) {
-                accommodationFeesPaid = entries.get(s);
-            }
             if (s.equalsIgnoreCase("Date of Birth")) {
                 dob = entries.get(s);
             }
-            if (s.equalsIgnoreCase("Course Type")) {
-                courseType = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("Course Institution")) {
-                courseInstitution = entries.get(s);
-            }
-            if (s.equalsIgnoreCase("Original course start date")) {
-                originalCourseStartDate = entries.get(s);
-            }
 
-            if (s.equalsIgnoreCase("Dependants only") && entries.get(s).equalsIgnoreCase("Yes")) {
-                dependanstOnly = "true";
-            } else if (s.equalsIgnoreCase("Dependants only") && entries.get(s).equalsIgnoreCase("No")) {
-                dependanstOnly = "false";
-            } else if (s.equalsIgnoreCase("Dependants only")) {
-                dependanstOnly = "";
-            }
-
-            if (s.equalsIgnoreCase("Recognised body or HEI") && entries.get(s).equalsIgnoreCase("Yes")) {
-                recognisedBodyOrHEI = "true";
-            } else if (s.equalsIgnoreCase("Recognised body or HEI") && entries.get(s).equalsIgnoreCase("No")) {
-                recognisedBodyOrHEI = "false";
-            } else if (s.equalsIgnoreCase("Recognised body or HEI")) {
-                recognisedBodyOrHEI = "";
-            }
         }
     }
 
