@@ -30,7 +30,6 @@ public class stepdef {
     String consentCheckUrkRegex = "/financialstatus/v1.*";
 
 
-
     testing ts = new testing();
 
     public void getTableData(DataTable arg) {
@@ -38,7 +37,6 @@ public class stepdef {
         Set<String> tableKey = entries.keySet();
 
         for (String s : tableKey) {
-
 
             if (s.equalsIgnoreCase("Account Number")) {
                 accountNumber = entries.get(s);
