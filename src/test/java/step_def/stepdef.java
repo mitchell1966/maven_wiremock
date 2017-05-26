@@ -94,7 +94,7 @@ public class stepdef {
     @When("^the endpoint is called$")
     public void the_endpoint_is_called(DataTable arg) {
         this.getTableData(arg);
-        ts.setup(accountNumber);
+        //ts.setup(accountNumber);
         resp = get("http://localhost:8080/pttg/financialstatus/v1/accounts/{sortCode}/{accountNumber}/dailybalancestatus?fromDate={fromDate}&toDate={toDate}&minimum={minimum}&dob={dob}", sortCode, accountNumber, fromDate, toDate, minimum, dob);
         jsonAsString = resp.asString();
 
